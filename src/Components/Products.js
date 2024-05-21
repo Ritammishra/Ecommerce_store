@@ -5,6 +5,7 @@ import { add } from '../store/cartSlice';
 
 const Products = () => {
 
+    // const message = useSelector((state) => state.cart.message)
     const dispatch = useDispatch()
     const [products, setProducts] = useState([]);
 
@@ -76,6 +77,7 @@ const Products = () => {
     return (
         <>
             <div className="flex h-{100vh}" style={{ display: "flex", flexWrap: "wrap", backgroundColor: "#0E2A47", justifyContent: "center" }}>
+                {/* {message && <div className="message">{message}</div>}    */}
                 <div className='w-2/4 h-8 bg-white mt-4 flex justify-around items-center rounded'>
                 <p className='mr-2 cursor-pointer' onClick={allproduct}>All Product</p>
                    <p className='mr-2 cursor-pointer' onClick={electronics}>Electronics</p>
